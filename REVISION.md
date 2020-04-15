@@ -1,5 +1,11 @@
 # Revision history
 
+v2.0.1 (2020-04-14)
+----------------------
+
+* Done with Kmom02. Used phpdoc via make doc to autogenerate documentation, added report text.
+
+
 v2.0.0 (2020-04-14)
 ----------------------
 
