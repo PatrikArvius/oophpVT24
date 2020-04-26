@@ -11,8 +11,10 @@ $app->router->get("guess/init", function () use ($app) {
     // Init the game
 
     //Starts the session
-    session_name("paar19");
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_name("paar19");
+        session_start();
+    }
 
     //Starts the game
     if (!isset($_SESSION["guess"])) {

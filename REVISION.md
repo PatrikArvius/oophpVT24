@@ -1,5 +1,11 @@
 # Revision history
 
+v3.0.0 (2020-04-26)
+----------------------
+
+* Created Dice100 game and made PHPUnit tests for it. Added pictures of UML diagram and code coverage.
+
+
 v2.0.1 (2020-04-14)
 ----------------------
 
