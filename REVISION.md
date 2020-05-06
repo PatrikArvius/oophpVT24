@@ -1,5 +1,11 @@
 # Revision history
 
+v4.0.0 (2020-05-06)
+----------------------
+
+* Implemented a controller for improved dice game, used trait and interface. New unit tests and new code coverage picture.
+
+
 v3.0.1 (2020-04-27)
 ----------------------
 

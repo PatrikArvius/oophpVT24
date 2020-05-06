@@ -93,5 +93,10 @@ return [
             "url" => "dice100",
             "title" => "Spela spelet Dice100",
         ],
+        [
+            "text" => "Dice101",
+            "url" => "dice101",
+            "title" => "Spela spelet Dice100",
+        ],
     ],
 ];

@@ -82,6 +82,22 @@ class DiceHand
     }
 
     /**
+     * Method to get the individual dice values in an array
+     *
+     * @return array as array of ind dice values
+     */
+    public function getDiceValuesArray()
+    {
+        $values = [];
+
+        foreach ($this->hand as $dice) {
+            $values[] = $dice->getDiceValue();
+        }
+
+        return $values;
+    }
+
+    /**
      * Method that checks if a one has been rolled.
      *
      * @return bool as weather or not a 1 has been rolled.

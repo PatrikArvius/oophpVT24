@@ -52,6 +52,16 @@ class Dice
     }
 
     /**
+     * Function to get the start value of the dice
+     *
+     * @return int as the start value
+     */
+    public function getStartValue()
+    {
+        return $this->startValue;
+    }
+
+    /**
     * Get a graphic class-value for last rolled dice
     *
     * @return string as class-name that represents rolled dice.

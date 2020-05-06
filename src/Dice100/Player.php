@@ -10,6 +10,8 @@ class Player
      * @var DiceHand $hand as the hand of dice objects
      * @var int $currentScore as the score prior to saving or hitting a one.
      * @var int $savedScore as the score that's been saved away.
+     * @var bool $saved as boolean for if the player has saved.
+     * @var bool $rolled as boolean for if player has rolled.
      */
     protected $hand;
     protected $currentScore;
@@ -99,6 +101,17 @@ class Player
     public function getLastRoll()
     {
         return $this->hand->getDiceValues();
+    }
+
+    /**
+     * Method to get an array of last rolled
+     * values
+     *
+     * @return array as values of dice rolled.
+     */
+    public function getLastRollArray()
+    {
+        return $this->hand->getDiceValuesArray();
     }
 
     /**

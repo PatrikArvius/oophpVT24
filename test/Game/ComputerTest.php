@@ -21,8 +21,22 @@ class ComputerTest extends TestCase
         $this->assertTrue($res > 0);
         $this->assertTrue($comp->getCurrentScore() === 0);
 
+        $comp = new Computer(3, 2, 2);
+        $comp->playRound(40, 60);
+        $res = $comp->getSavedScore();
+        $this->assertTrue($res > 0);
+        $this->assertTrue($comp->getCurrentScore() === 0);
+
         $comp = new Computer(3, 1);
         $comp->playRound();
         $this->assertTrue($comp->getCurrentScore() === 0);
+    }
+
+    public function testGetLastRollArray()
+    {
+        $comp = new Computer(6);
+        $comp->playRound();
+        $res = count($comp->getLastRollArray());
+        $this->assertEquals($res, 6);
     }
 }
