@@ -98,5 +98,10 @@ return [
             "url" => "dice101",
             "title" => "Spela spelet Dice100",
         ],
+        [
+            "text" => "Movie",
+            "url" => "movie",
+            "title" => "Filmdatabasen",
+        ],
     ],
 ];

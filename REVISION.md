@@ -1,5 +1,12 @@
 # Revision history
 
+
+v5.0.0 (2020-05-14)
+----------------------
+
+* Added movie db to me/redovisa using controller.
+
+
 v4.0.1 (2020-05-06)
 ----------------------
 
