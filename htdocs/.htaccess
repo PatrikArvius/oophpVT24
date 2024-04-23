@@ -3,7 +3,7 @@
 # development environment and publishing to www.student.bth.se.
 # Adapted for the oophp course.
 #
-# Do NOT forget to change /~paar19/ to your own student acronym.
+# Do NOT forget to change /~paar24/ to your own student acronym.
 #
 RewriteEngine on
 
@@ -15,10 +15,10 @@ RewriteRule (.*) - [NC,L]
 
 # Rewrite 1 - For request via www.student.bth.se
 RewriteCond %{HTTP_HOST} ^www\.student\.bth\.se$ [NC]
-RewriteRule ^image/(.*)$ /~paar19/dbwebb-kurser/oophp/me/redovisa/htdocs/cimage/img.php?src=$1 [QSA,NC,L]
+RewriteRule ^image/(.*)$ /~paar24/dbwebb-kurser/oophp/me/redovisa/htdocs/cimage/img.php?src=$1 [QSA,NC,L]
 
 RewriteCond %{HTTP_HOST} ^www\.student\.bth\.se$ [NC]
-RewriteRule (.*) /~paar19/dbwebb-kurser/oophp/me/redovisa/htdocs/index.php/$1 [NC,L]
+RewriteRule (.*) /~paar24/dbwebb-kurser/oophp/me/redovisa/htdocs/index.php/$1 [NC,L]
 
 
 # Rewrite 2 - For other requests
